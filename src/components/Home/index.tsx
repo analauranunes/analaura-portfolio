@@ -3,14 +3,14 @@ import Link from "next/link";
 import * as S from "./styles";
 import homeVector from "../../Assets/home.png";
 
-function Home() {
+function HomeComponent() {
   return (
     <S.ContainerDiv>
       <S.ContainerInfos>
         <S.ContainerSpans>
-          <Link href={"/About"}><span id="hiAbout-span"></span></Link>
-          <Link href={"/Projects"}><span id="iAmProjects-span"></span></Link>
-          <Link href={"/Contact"}><span id="anaContact-span"></span></Link>
+          <Link href={"/about"}><span id="hiAbout-span"></span></Link>
+          <Link href={"/projects"}><span id="iAmProjects-span"></span></Link>
+          <Link href={"/contact"}><span id="anaContact-span"></span></Link>
         </S.ContainerSpans>
       </S.ContainerInfos>
       <S.ContainerImg>
@@ -21,4 +21,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default HomeComponent;

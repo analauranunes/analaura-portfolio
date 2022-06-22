@@ -1,14 +1,13 @@
-import type { NextPage } from 'next'
-import GlobalStyle from '../styles/globalStyle'
-import HomeComponent from '../components/Home'
+import GlobalStyle from "../styles/globalStyle";
+import HomeComponent from "../components/Home";
 
-const Home: NextPage = () => {
+function Home() {
   return (
-    <div className='App'>
-      <GlobalStyle/>
-      <HomeComponent/>
+    <div className="App">
+      <GlobalStyle />
+      <HomeComponent />
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;

@@ -12,15 +12,15 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     :root {
         --primary-white: #F1F2E9;
-        --primary-pink: #D96A7E;
-        --primary-purple: #BF60AF;
-        --primary-dark-pink: #D96299;
+        --primary-pink: #FF5C8D;
+        --primary-purple: #AE00FB;
+        --primary-dark-pink: #1CC5DC;
         --home-titles-cream: #F2A007;
     }
+    background: var(--primary-white);
   }
 
   .App{
-      background-color: whitesmoke;
       width: 100vw;
       height: 100vh;
   }

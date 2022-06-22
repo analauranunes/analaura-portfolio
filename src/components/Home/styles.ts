@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ContainerDiv = styled.div`
-  background: var(--primary-white);
   animation: 1s ease-out 0s 1 slideInFromTop;
   display: flex;
   flex-direction: column;
