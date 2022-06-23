@@ -51,6 +51,7 @@ export const ContainerDiv = styled.div`
       rgba(255, 0, 0, 1) 100%
     );
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 0.5px whitesmoke;
   }
@@ -113,10 +114,10 @@ export const ContainerDiv = styled.div`
         display: flex;
         gap: 5px;
         font-size: 22px;
-        color: #A287F4;
+        color: #a287f4;
 
-        h3{
-            color: #481380;
+        h3 {
+          color: #481380;
         }
       }
 
@@ -125,8 +126,8 @@ export const ContainerDiv = styled.div`
         width: 90%;
       }
 
-      .p-description{
-          text-align: justify;
+      .p-description {
+        text-align: justify;
       }
 
       .techs-span {
