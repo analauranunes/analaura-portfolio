@@ -7,8 +7,32 @@ import nuImg from "../../Assets/nu.png";
 import beraTopImg from "../../Assets/beraTop.png";
 import portfolioImg from "../../Assets/portfolio.png";
 import recipesImg from "../../Assets/recipes.png";
+import kenzieHubImg from "../../Assets/kenzie-hub.png";
+import catDogImg from "../../Assets/cat-dog.png";
+import medalsBoardImg from "../../Assets/medals.png";
 
 const projectsInfo = [
+  {
+    name: "Cats and Dogs",
+    description:
+      "Aplicação que gera fotos aleatórias de gatos e cachorros com requisições à API.",
+    techs: "JavaScript | HTML | API Rest | CSS",
+    image: catDogImg,
+    app: "https://kenzie-academy-brasil-developers.github.io/m2-atividade-the-dog-and-cat-api-sprint-3b-analauranunes/",
+    gitHub:
+      "https://github.com/Kenzie-Academy-Brasil-Developers/m2-atividade-the-dog-and-cat-api-sprint-3b-analauranunes",
+  },
+  {
+    name: "Kenzie Hub",
+    description:
+      "Aplicação onde permite o usuário organizar o que está estudando e em que nível está. Podendo editar e deletar suas tecnologias.",
+    techs:
+      "React.js | API Rest | Router Dom | Styled-Components | React Toastify",
+    image: kenzieHubImg,
+    app: "https://react-entrega-s2-kenzie-hub-analauranunes.vercel.app/",
+    gitHub:
+      "https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s2-kenzie-hub-analauranunes",
+  },
   {
     name: "Contador",
     description: "Contador desenvolvido com intuito de treinar redux.",
@@ -58,6 +82,16 @@ const projectsInfo = [
     app: "https://react-entrega-s3-kenzishop-com-context-api-analauranunes.vercel.app/",
     gitHub:
       "https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s3-kenzishop-com-context-api-analauranunes",
+  },
+  {
+    name: "Quadro de Medalhas",
+    description:
+      "Aplicação que tem como objetivo verificar quadro de medalhas das olímpiadas com requisação à API.",
+    techs: "JavaScript | HTML | API Rest | CSS",
+    image: medalsBoardImg,
+    app: "https://crispy-happiness-4338e5bf.pages.github.io/?pesquisa=Brasil",
+    gitHub:
+      "https://github.com/Kenzie-Academy-Brasil-Developers/extra-quadro-medalhas-m2-sprint-3a-analauranunes",
   },
   {
     name: "Nu Kenzie",
