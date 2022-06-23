@@ -4,7 +4,6 @@ export const ContainerDiv = styled.div`
   width: 100%;
   height: 100vh;
   animation: 1s ease-out 0s 1 slideInFromTop;
-  color: var(--primary-pink);
   display: flex;
   flex-direction: column;
   align-items: center;

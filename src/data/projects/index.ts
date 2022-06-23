@@ -110,8 +110,8 @@ const projectsInfo = [
     techs:
       "React.js | Router Dom | Context API | API Rest | Axios | Hook Form | Yup | Styled-Components | React Icons | React Toastify | React Modal",
     image: beraTopImg,
-    app: "",
-    gitHub: "",
+    app: "https://capstone-bera-top.vercel.app/",
+    gitHub: "https://github.com/analauranunes/capstone-bera-top",
   },
   {
     name: "Portfólio",
@@ -119,8 +119,8 @@ const projectsInfo = [
       "Aplicação construída para me conhecer e ver os projetos em que venho trabalhando.",
     techs: "Next.js | Typescript | Styled-Components",
     image: portfolioImg,
-    app: "capstone-bera-top.vercel.app/",
-    gitHub: "https://github.com/analauranunes/capstone-bera-top",
+    app: "",
+    gitHub: "https://github.com/analauranunes/analaura-portfolio",
   },
   {
     name: "Blog Receitas",
