@@ -8,7 +8,7 @@ export const ContainerDiv = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
   color: var(--primary-purple);
 
   @keyframes slideInFromTop {
@@ -29,6 +29,26 @@ export const ContainerDiv = styled.div`
     }
   }
 
+  @keyframes shake {
+    10%,
+    90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+      transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
   span {
     font-size: 30px;
     text-align: center;
@@ -42,6 +62,15 @@ export const ContainerDiv = styled.div`
 
     h1 {
       color: var(--primary-purple);
+    }
+  }
+
+  #monster-container {
+    span {
+      animation: shake 2.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
+      transform: translate3d(0, 0, 0);
+      backface-visibility: hidden;
+      perspective: 1000px;
     }
   }
 
