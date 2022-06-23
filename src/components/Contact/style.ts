@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
 export const ContainerDiv = styled.div`
+  width: 100%;
+  height: 100vh;
   animation: 1s ease-out 0s 1 slideInFromTop;
+  color: var(--primary-pink);
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
-  color: #481380;
+  align-items: center;
+  color: var(--primary-purple);
 
   @keyframes slideInFromTop {
     0% {
@@ -56,103 +58,45 @@ export const ContainerDiv = styled.div`
   }
 
   #h1-container {
+    padding-top: 45px;
     display: flex;
     font-size: 35px;
-    align-self: center;
     gap: 5px;
     color: #a287f4;
-    padding-top: 50px;
-    padding-bottom: 30px;
 
     h1 {
-      font-weight: 700;
       color: var(--primary-purple);
     }
   }
 
-  ul {
+  h2 {
+    padding: 30px 10px;
+    text-align: justify;
+    font-size: 28px;
+    max-width: 700px;
+    color: #716f81;
+  }
+
+  #links-container {
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
     align-items: center;
-    padding: 20px 0px 30px 10px;
-    padding-bottom: 30px;
-    overflow-y: hidden;
-    height: 100%;
+    justify-content: center;
+    gap: 10px;
+    padding: 25px;
 
-    li {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-      text-align: center;
-      background: #fff0f8;
-      border: 1px solid #dfbaf7;
-      box-shadow: 0 0 1em #dfbaf7;
-      border-radius: 5px;
-      min-width: 280px;
-      max-width: 300px;
-      height: 460px;
+    a {
+      padding: 0px 15px;
       transition: 0.8s;
-
       :hover {
         transition: 0.8s;
         overflow: hidden;
-        transform: scale(1.05);
+        transform: scale(1.1);
       }
-
-      h3,
-      p,
-      span,
-      a,
-      .links-image,
-      .container-links {
-        background: transparent;
-      }
-
-      .h3-container {
-        display: flex;
-        gap: 5px;
-        font-size: 22px;
-        color: #A287F4;
-
-        h3{
-            color: #481380;
-        }
-      }
-
-      .p-description,
-      .techs-span {
-        width: 90%;
-      }
-
-      .p-description{
-          text-align: justify;
-      }
-
-      .techs-span {
-      }
-
-      .project-img {
-        object-fit: fill;
-        height: 200px;
-      }
-
-      .container-links {
-        display: flex;
-        gap: 20px;
-      }
-    }
-  }
-
-  @media (min-width: 650px) {
-    ul {
-      flex-wrap: wrap;
-      justify-content: center;
     }
   }
 
   @media (min-width: 915px) {
     animation: 1s ease-out 0s 1 slideInFromLeft;
-    padding-left: 6%;
   }
 `;

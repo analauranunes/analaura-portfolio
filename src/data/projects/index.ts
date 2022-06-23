@@ -22,7 +22,7 @@ const projectsInfo = [
     name: "Formulário de Cadastro",
     description:
       "Aplicação de cadastro onde foi utilizado a biblioteca de hook form, verficações com yup e redirecionamento para uma tela com informação do usuário.",
-    techs: "React.js | Router Dom | Hook Form | Yup | Styleed-Components",
+    techs: "React.js | Router Dom | Hook Form | Yup | Styled-Components",
     image: formImg,
     app: "https://react-entrega-s2-formulario-de-cadastro-analauranunes.vercel.app/",
     gitHub:
