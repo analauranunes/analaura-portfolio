@@ -8,16 +8,20 @@ const GlobalStyle = createGlobalStyle`
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
     box-sizing: border-box;
     :root {
         --primary-white: #F1F2E9;
         --primary-pink: #FF5C8D;
         --primary-purple: #AE00FB;
         --primary-dark-pink: #1CC5DC;
-        --home-titles-cream: #F2A007;
+        --home-titles-orange: #F2A007;
     }
     background: var(--primary-white);
+  }
+
+  h1{
+    font-family: 'Indie Flower', cursive;
   }
 
   .App{

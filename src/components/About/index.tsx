@@ -3,7 +3,7 @@ import girlGame from "../../Assets/girl-about.png";
 import Image from "next/image";
 import Link from "next/link";
 import techsImg from "../../data/knowledge";
-import learningImg from "../../data/learning"
+import learningImg from "../../data/learning";
 
 function AboutComponent() {
   return (
@@ -13,14 +13,18 @@ function AboutComponent() {
         <div id="container-img">
           <Image width={"200px"} height={"200px"} src={girlGame} alt="" />
         </div>
-        <h1>&lt; Sobre mim /&gt;</h1>
+        <span>
+          &lt;
+          <h1> Sobre mim </h1>
+          /&gt;
+        </span>
         <div id="container-me">
           <p>
             Prazer, meu nome é Ana Laura! Tenho 24 anos, nascida e criada em
             Sorocaba/SP, porém com muita vontade de conhecer cada vez mais os
             lugares do mundo. Sempre me senti muito perdida na vida, sem noção
-            do que gostaria de seguir, mas em mente que gostaria de fazer
-            a diferença no que chegasse a escolher. Descobri programação pela
+            do que gostaria de seguir, mas em mente que gostaria de fazer a
+            diferença no que chegasse a escolher. Descobri programação pela
             minha namorada. Embora ela não seja nem remotamente perto dessa
             área, acabou me contando dessa tal modalidade de fazer um curso e
             pagar somente quando estivesse empregado. Comecei a pesquisar sobre,
@@ -33,7 +37,11 @@ function AboutComponent() {
             paixões são o idioma inglês, games, animes e judô.
           </p>
         </div>
-        <h1 id="h1-techs">&lt; Conhecimentos /&gt;</h1>
+        <span>
+          &lt;
+          <h1> Conhecimentos </h1>
+          /&gt;
+        </span>
         <div className="container-techs">
           {techsImg.map((tech, index) => (
             <div key={index}>
@@ -46,9 +54,13 @@ function AboutComponent() {
             </div>
           ))}
         </div>
-        <h1>&lt; Aprendendo /&gt;</h1>
+        <span>
+          &lt;
+          <h1> Aprendendo </h1>
+          /&gt;
+        </span>
         <div className="container-techs">
-        {learningImg.map((tech, index) => (
+          {learningImg.map((tech, index) => (
             <div key={index}>
               <Image
                 width={"100px"}

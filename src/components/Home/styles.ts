@@ -139,7 +139,7 @@ export const ContainerSpans = styled.div`
   span {
     cursor: pointer;
     font-size: 45px;
-    color: var(--home-titles-cream);
+    color: var(--home-titles-orange);
     padding-block: 5px;
 
     &::before {

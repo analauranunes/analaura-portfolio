@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const ContainerDiv = styled.div`
-  width: 100%;
-  height: 100vh;
   animation: 1s ease-out 0s 1 slideInFromTop;
-  color: var(--primary-pink);
   display: flex;
   flex-direction: column;
+  width: 100%;
+  height: 100%;
+  color: #481380;
 
   @keyframes slideInFromTop {
     0% {
@@ -25,19 +25,8 @@ export const ContainerDiv = styled.div`
       transform: translateX(0);
     }
   }
-  span {
-    display: flex;
-    font-size: 30px;
-    align-self: center;
-    gap: 5px;
-    color: #A287F4;
-    h1 {
-      font-weight: 700;
-      color: var(--primary-purple);
-    }
-  }
 
-  a {
+  #header-ana {
     position: fixed;
     z-index: 1;
     right: 2%;
@@ -66,55 +55,97 @@ export const ContainerDiv = styled.div`
     -webkit-text-stroke: 0.5px whitesmoke;
   }
 
-  #container-about {
-    padding-top: 40px;
+  #h1-container {
+    display: flex;
+    font-size: 35px;
+    align-self: center;
+    gap: 5px;
+    color: #a287f4;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    h1 {
+      font-weight: 700;
+      color: var(--primary-purple);
+    }
+  }
+
+  ul {
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding-bottom: 30px;
 
-    #container-img {
-      max-width: 200px;
+    li {
       display: flex;
       flex-direction: column;
-      gap: 10px;
-      align-self: center;
-    }
+      align-items: center;
+      justify-content: space-around;
+      text-align: center;
+      background: #fff0f8;
+      border: 1px solid #dfbaf7;
+      box-shadow: 0 0 1em #dfbaf7;
+      border-radius: 5px;
+      max-width: 300px;
+      height: 440px;
+      transition: 0.8s;
 
-    #container-me {
-      padding: 10px;
-      text-align: justify;
+      :hover {
+        transition: 0.8s;
+        overflow: hidden;
+        transform: scale(1.05);
+      }
 
-      p {
-        color: #716f81;
-        font-size: 20px;
+      h3,
+      p,
+      span,
+      a,
+      .links-image,
+      .container-links {
+        background: transparent;
+      }
+
+      .h3-container {
+        display: flex;
+        gap: 5px;
+        font-size: 22px;
+        color: #A287F4;
+
+        h3{
+            color: #481380;
+        }
+      }
+
+      .p-description,
+      .techs-span {
+        width: 90%;
+      }
+
+      .techs-span {
+      }
+
+      .project-img {
+        object-fit: fill;
+        height: 200px;
+      }
+
+      .container-links {
+        display: flex;
+        gap: 20px;
       }
     }
+  }
 
-    .container-techs {
-      display: flex;
+  @media (min-width: 650px) {
+    ul {
+      flex-direction: row;
       flex-wrap: wrap;
-      align-items: center;
       justify-content: center;
-      gap: 20px;
-      padding-top: 20px;
-      padding-bottom: 30px;
     }
   }
 
   @media (min-width: 915px) {
     animation: 1s ease-out 0s 1 slideInFromLeft;
-
-    #container-about {
-      gap: 30px;
-    }
-
-    #container-me {
-      max-width: 800px;
-      align-self: center;
-    }
-
-    .container-techs {
-      max-width: 900px;
-      align-self: center;
-    }
+    padding-left: 6%;
   }
 `;
