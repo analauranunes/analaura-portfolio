@@ -119,7 +119,7 @@ const projectsInfo = [
       "Aplicação construída para me conhecer e ver os projetos em que venho trabalhando.",
     techs: "Next.js | Typescript | Styled-Components",
     image: portfolioImg,
-    app: "",
+    app: "https://analaura-portfolio.vercel.app/",
     gitHub: "https://github.com/analauranunes/analaura-portfolio",
   },
   {
